@@ -1,0 +1,169 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    transition: background-color 0.3s ease;
+}
+
+.calculator {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: white;
+    transition: background 0.3s ease;
+}
+
+.display {
+    background: #222;
+    color: #e0e0e0;
+    padding: 30px;
+    text-align: right;
+    border-bottom: 2px solid #444;
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 2.5em;
+    background: transparent;
+    color: inherit;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    padding: 25px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.number {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn.number:hover {
+    background-color: #d0d0d0;
+}
+
+.btn.operator {
+    background-color: #f09a36;
+    color: #fff;
+}
+
+.btn.operator:hover {
+    background-color: #e6892d;
+}
+
+.btn.reset {
+    grid-column: span 2;
+    background-color: #e04f5f;
+    color: #fff;
+}
+
+.btn.reset:hover {
+    background-color: #d43f4e;
+}
+
+.btn.equal {
+    grid-column: span 2;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn.equal:hover {
+    background-color: #43a047;
+}
+
+.theme-toggle {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.theme-toggle label {
+    margin-right: 10px;
+}
+
+
+body.dark-theme {
+    background-color: #121212;
+}
+
+body.dark-theme .calculator {
+    background: #1e1e1e;
+}
+
+body.dark-theme .display {
+    background: #333;
+    color: #e0e0e0;
+    border-bottom: 2px solid #555;
+}
+
+body.dark-theme .btn {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+}
+
+body.dark-theme .btn:hover {
+    background-color: #444;
+}
+
+body.dark-theme .btn.number {
+    background-color: #444;
+}
+
+body.dark-theme .btn.number:hover {
+    background-color: #555;
+}
+
+body.dark-theme .btn.operator {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+}
+
+body.dark-theme .btn.operator:hover {
+    background-color: #f57c00;
+}
+
+body.dark-theme .btn.reset {
+    background-color: #f44336;
+    color: #fff;
+}
+
+body.dark-theme .btn.reset:hover {
+    background-color: #e53935;
+}
+
+body.dark-theme .btn.equal {
+    background-color: #66bb6a;
+    color: #fff;
+}
+
+body.dark-theme .btn.equal:hover {
+    background-color: #4caf50;
+}
